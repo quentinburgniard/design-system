@@ -1,0 +1,9 @@
+{
+  "name": "design-system",
+  "scripts": {
+    "build": "sass --no-source-map --style=compressed index.scss web/index.min.css"
+  },
+  "devDependencies": {
+    "sass": "1.x"
+  }
+}
