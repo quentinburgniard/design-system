@@ -1,3 +1,29 @@
-h1 {
-  font-size: 23px;
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+:root {
+  --bs-link-color: #272727;
+}
+
+body {
+  //color: #272727;
+}
+
+a {
+  //color: #272727;
+}
+
+.ds-header {
+  margin: 40px 0 0 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  .ds-icon {
+    height: 42px;
+  }
+  .ds-title {
+    text-transform: lowercase;
+  }
 }
