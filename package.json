@@ -1,7 +1,8 @@
 {
   "name": "design-system",
   "scripts": {
-    "build": "sass --no-source-map --style=compressed index.scss web/index.min.css"
+    "build": "sass --no-source-map -s=compressed index.scss web/index.min.css",
+    "dev": "sass --no-source-map -w index.scss web/index.min.css"
   },
   "dependencies": {
     "bootstrap": "5.x",
