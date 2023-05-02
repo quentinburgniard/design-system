@@ -1,5 +1,6 @@
 @import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import "node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
 
 :root {
@@ -7,22 +8,27 @@
   --bs-link-hover-color: #272727;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+}
+
 .row > * {
   padding: 0 15px 0 15px;
 }
 
-body {
-  //color: #272727;
+.display {
+  display: block !important;
 }
 
 a {
   //color: #272727;
 }
 
-.ds-header {
+header.ds-header {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
 
   a {
     text-decoration: none;
@@ -38,9 +44,9 @@ a {
     .ds-text {
       display: inline-block;
       font-size: 28px;
-      font-weight: 700;
+      font-weight: 900;
       line-height: 28px;
-      padding: 4px 0 10px 0;
+      padding: 5px 0 9px 0;
       text-transform: lowercase;
     }
   }
@@ -51,7 +57,7 @@ a {
     height: 42px;
     justify-content: space-between;
     margin: 0 12px;
-    padding: 15px 0 16px 0;
+    padding: 19px 0 12px 0;
     width: 20px;
 
     .ds-line {
@@ -60,4 +66,33 @@ a {
       height: 3px;
     }
   }
+}
+
+section.ds-full-width-image {
+  border-radius: 8px;
+  overflow: hidden;
+
+  .ds-background-image {
+    width: 100%;
+  }
+}
+
+.ds-link {
+  background: #F4F4F6;
+  border-radius: 8px;
+  display: block;
+  margin: 15px 0 0 0;
+  padding: 15px 12px;
+  text-decoration: none;
+}
+
+.ds-menu {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(7.5px);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 72px;
 }
