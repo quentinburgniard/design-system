@@ -5,12 +5,15 @@
   <title>Design System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="index.min.css">
+  <link href="https://static.digitalleman.com/s/digitalleman-icon-small.png" rel="Icon Digital Léma" type="image/png"/>
 </head>
 <body>
   <!-- Design System is based on Bootstrap for layout & grid https://getbootstrap.com/docs/5.3/layout/grid/ -->
+  <!-- All components are prefix with ds -->
   <div class="container">
     <div class="row">
       <div class="col">
+        <!-- Header component -->
         <header class="ds-header">
           <a class="ds-logo" href="/">
             <img alt="Icon Digital Léman" class="ds-icon" src="https://static.digitalleman.com/s/digitalleman-icon-small.png">
@@ -25,6 +28,7 @@
     </div>
     <div class="row">
       <div class="col-xl-6">
+        <!-- Full Width Image component -->
         <section class="ds-full-width-image">
           <img alt="Profil Quentin Burgniard" class="ds-background-image" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
         </section>
@@ -32,6 +36,7 @@
     </div>
     <div class="row">
       <div class="col">
+        <!-- Link component -->
         <a class="ds-link" href="/">
           <div class="ds-title">Backend Development<i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i></div>
           <div class="ds-description">From PHP to Node.js, I'm building light & modular backend with Docker.</div>
@@ -39,6 +44,7 @@
       </div>
     </div>
   </div>
+   <!-- Menu component -->
   <div class="ds-menu" id="ds-menu">
     <div class="container">
       <div class="row">
