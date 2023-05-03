@@ -1,7 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import "node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "node_modules/bootstrap-icons/font/bootstrap-icons.scss";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Lato:wght@400;700;900&display=swap');
 
 :root {
   --bs-link-color: #272727;
@@ -34,14 +34,14 @@ header.ds-header {
     text-decoration: none;
   }
 
-  .ds-logo {
-    .ds-icon {
+  .logo {
+    img {
       height: 42px;
       vertical-align: top;
       width: 42px;
     }
 
-    .ds-text {
+    div {
       display: inline-block;
       font-size: 28px;
       font-weight: 900;
@@ -51,7 +51,7 @@ header.ds-header {
     }
   }
 
-  .ds-hamburger {
+  .hamburger {
     display: flex;
     flex-direction: column;
     height: 42px;
@@ -60,7 +60,7 @@ header.ds-header {
     padding: 18px 0 13px 0;
     width: 20px;
 
-    .ds-line {
+    div {
       background: #272727;
       border-radius: 0.25px;
       height: 3px;
@@ -68,22 +68,72 @@ header.ds-header {
   }
 }
 
+footer.ds-footer {
+  background: #AE9090;
+  padding: 50px 0 50px 0;
+
+  .ds-link {
+    background: #FFFFFF;
+  }
+}
+
 section.ds-full-width-image {
   border-radius: 8px;
   overflow: hidden;
 
-  .ds-background-image {
+  img {
     width: 100%;
   }
 }
 
-.ds-link {
+.ds-link, .ds-small-link {
   background: #F4F4F6;
   border-radius: 8px;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+
+  .text {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .title {
+      font-family: 'Catamaran', sans-serif;
+      font-weight: 600;
+    }
+  
+    .description {
+      color: #444444;
+      font-family: 'Lato', sans-serif;
+    }
+  }
+
+  .action-icon {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.ds-link {
   margin: 15px 0 0 0;
   padding: 15px 12px;
-  text-decoration: none;
+
+  .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .description {
+    font-size: 12px;
+    letter-spacing: -0.1px;
+    line-height: 15px;
+  }
+
+  .action-icon {
+    font-size: 18px;
+  }
 }
 
 .ds-menu {
@@ -99,5 +149,14 @@ section.ds-full-width-image {
   .ds-link:first-child {
     background: #E1E1E1;
     margin: 30px 0 0 0;
+  }
+}
+
+.ds-title {
+  ._ds-title title {
+
+  }
+  ._ds-title subtitle {
+
   }
 }
