@@ -46,7 +46,7 @@ header.ds-header {
       font-size: 28px;
       font-weight: 900;
       line-height: 28px;
-      padding: 5px 0 9px 0;
+      padding: 4px 0 10px 0;
       text-transform: lowercase;
     }
   }
@@ -57,7 +57,7 @@ header.ds-header {
     height: 42px;
     justify-content: space-between;
     margin: 0 12px;
-    padding: 19px 0 12px 0;
+    padding: 18px 0 13px 0;
     width: 20px;
 
     .ds-line {
@@ -95,4 +95,9 @@ section.ds-full-width-image {
   position: absolute;
   right: 0;
   top: 72px;
+
+  .ds-link:first-child {
+    background: #E1E1E1;
+    margin: 30px 0 0 0;
+  }
 }

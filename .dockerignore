@@ -1,0 +1,9 @@
+.dockerignore
+.DS_Store
+.git
+.gitignore
+Dockerfile
+fonts
+LICENSE
+node_modules
+README.md
