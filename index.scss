@@ -10,6 +10,11 @@
   --bs-link-hover-color: #272727;
 }
 
+:focus-visible {
+  outline-offset: 0;
+  outline: #272727 auto 2px;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   position: relative;
@@ -42,6 +47,11 @@ footer.ds-footer {
   margin: 50px 0 0 0;
   padding: 50px 0 50px 0;
 
+  :focus-visible {
+    outline-offset: 0;
+    outline: #272727 solid 2px;
+  }
+
   .ds-link {
     background: #FFFFFF;
   }
@@ -52,6 +62,22 @@ footer.ds-footer {
 
   .row > .col > * {
     margin: 30px 0 0 0;
+  }
+}
+
+/* Text component */
+form.ds-form {
+  line-height: 15px;
+  margin: 30px 0 0 0;
+  padding: 0 12px;
+
+  input {
+    border: 0.6px solid #C6C6C6;
+    border-radius: 6px;
+    color: #272727;
+    display: block;
+    padding: 11px 15px;
+    width: 100%;
   }
 }
 
@@ -126,14 +152,18 @@ header.ds-header {
   }
 }
 
-/* Link & Small Link components */
+/* Link components */
 .ds-link, .ds-link-small {
+  align-items: normal;
+  border: none;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   margin: 15px 0 0 0;
   padding: 15px 12px;
+  text-align: left;
   text-decoration: none;
+  width: 100%;
 
   .body {
     align-content: center;
@@ -191,11 +221,6 @@ header.ds-header {
   .title {
     font-size: 12px;
     line-height: 12px;
-  }
-
-  .text {
-    //font-size: 12px;
-    //line-height: 19px;
   }
 
   .action-icon {
