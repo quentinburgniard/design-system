@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Lato:wght@400;700;900&display=swap');
 
 :root {
+  --bs-body-color: #272727;
+  --bs-body-font-size: 15px;
   --bs-link-color: #272727;
   --bs-link-hover-color: #272727;
 }
@@ -13,8 +15,16 @@ body {
   position: relative;
 }
 
-.row > * {
-  padding: 0 15px 0 15px;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  --bs-gutter-x: 30px;
+}
+
+.row {
+  --bs-gutter-x: 15px;
 }
 
 .display {
@@ -25,6 +35,37 @@ a {
   //color: #272727;
 }
 
+/* Footer component */
+footer.ds-footer {
+  background: #AE9090;
+  color: #FFFFFF;
+  margin: 50px 0 0 0;
+  padding: 50px 0 50px 0;
+
+  .ds-link {
+    background: #FFFFFF;
+  }
+
+  .row:first-child > .col > * {
+    margin: 0;
+  }
+
+  .row > .col > * {
+    margin: 30px 0 0 0;
+  }
+}
+
+/* Full Width Image component */
+section.ds-full-width-image {
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+/* Header component */
 header.ds-header {
   display: flex;
   justify-content: space-between;
@@ -68,35 +109,37 @@ header.ds-header {
   }
 }
 
-footer.ds-footer {
-  background: #AE9090;
-  padding: 50px 0 50px 0;
+/* Info component */
+.ds-info {
+  padding: 0 12px;
 
-  .ds-link {
-    background: #FFFFFF;
+  .label {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .text {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
   }
 }
 
-section.ds-full-width-image {
-  border-radius: 8px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-  }
-}
-
-.ds-link, .ds-small-link {
-  background: #F4F4F6;
+/* Link & Small Link components */
+.ds-link, .ds-link-small {
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
+  margin: 15px 0 0 0;
+  padding: 15px 12px;
   text-decoration: none;
 
-  .text {
+  .body {
     align-content: center;
     display: flex;
     flex-direction: column;
+    flex-grow: 2;
     justify-content: center;
     
     .title {
@@ -104,31 +147,37 @@ section.ds-full-width-image {
       font-weight: 600;
     }
   
-    .description {
+    .text {
       color: #444444;
       font-family: 'Lato', sans-serif;
     }
   }
 
-  .action-icon {
+  .caption-icon, .action-icon {
     align-items: center;
     display: flex;
+  }
+
+  .caption-icon {
+    margin: 0 8px 0 0;
+  }
+
+  .action-icon {
+    margin: 0 0 0 8px;
   }
 }
 
 .ds-link {
-  margin: 15px 0 0 0;
-  padding: 15px 12px;
-
+  background: #F4F4F6;
+  
   .title {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 21px;
   }
 
-  .description {
+  .text {
     font-size: 12px;
-    letter-spacing: -0.1px;
-    line-height: 15px;
+    line-height: 18px;
   }
 
   .action-icon {
@@ -136,6 +185,26 @@ section.ds-full-width-image {
   }
 }
 
+.ds-link-small {
+  border: 0.6px solid #C6C6C6;
+
+  .title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .text {
+    //font-size: 12px;
+    //line-height: 19px;
+  }
+
+  .action-icon {
+    color: #A3A3A3;
+    font-size: 13px;
+  }
+}
+
+/* Menu component */
 .ds-menu {
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(7.5px);
@@ -146,17 +215,57 @@ section.ds-full-width-image {
   right: 0;
   top: 72px;
 
-  .ds-link:first-child {
+  .ds-link {
     background: #E1E1E1;
+  }
+
+  .row:first-child > .col > * {
     margin: 30px 0 0 0;
   }
 }
 
-.ds-title {
-  ._ds-title title {
+/* Section component */
+section.ds-section {
+  background: #FCF8F5;
+  border-radius: 8px;
+  margin: 15px 0 0 0;
+  padding: 30px 12px;
 
+  .title {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
   }
-  ._ds-title subtitle {
 
+  .text {
+    color: #444444;
+    line-height: 22px;
+  }
+}
+
+/* Text component */
+.ds-text {
+  line-height: 22px;
+  margin: 15px 0 0 0;
+  padding: 0 12px;
+}
+
+/* Title component */
+.ds-title {
+  margin: 30px 0 0 0;
+  padding: 0 12px;
+
+  .title {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+
+  .subtitle {
+    font-weight: 700;
+    line-height: 22px;
+    margin: 3px 0 0 0;
   }
 }
