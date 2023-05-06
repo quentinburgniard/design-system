@@ -1,5 +1,5 @@
 form.ds-form {
-  line-height: 15px;
+  line-height: 18px;
   margin: 15px 0 0 0;
   padding: 0 12px;
 
@@ -46,7 +46,7 @@ form.ds-form {
       display: none;
     }
 
-    input:hover ~ .unchecked, input:hover ~ .checked, input:hover ~ label {
+    input:hover ~ .unchecked, input:hover ~ .checked {
       color: #272727;
     }
 
@@ -65,6 +65,8 @@ form.ds-form {
 
   .select, .text {
     input, select, textarea {
+      appearance: none;
+      background: none;
       border: 0.6px solid #C6C6C6;
       border-radius: 6px;
       color: #272727;
@@ -72,6 +74,23 @@ form.ds-form {
       padding: 11px 15px;
       resize: none;
       width: 100%;
+    }
+  }
+
+  .select {
+    position: relative;
+
+    select {
+      cursor: pointer;
+      position: absolute;
+    }
+
+    .icons {
+      align-items: center;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 11.6px 15.6px;
     }
   }
 
