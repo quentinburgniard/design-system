@@ -34,6 +34,27 @@
         </section>
       </div>
     </div>
+  </div>
+  <!-- Image Carousel component -->
+  <div class="ds-image-carousel">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <img alt="Profil Quentin Burgniard" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
+        </div>
+        <div class="col-xl-4">
+          <img alt="Profil Quentin Burgniard" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
+        </div>
+        <div class="col-xl-4">
+          <img alt="Profil Quentin Burgniard" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
+        </div>
+        <div class="col-xl-4">
+          <img alt="Profil Quentin Burgniard" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
     <div class="row">
       <div class="col-12">
         <!-- Link component -->
@@ -131,28 +152,51 @@
         <div class="col-12">
           <div class="_ds-form select">
             <label for="language">Language</label>
+            <button class="z-index-medium" id="language" type="button">
+              <div class="_ds-link caption-icon">
+                <i class="bi bi-globe"></i>
+              </div>
+              <div class="_ds-link body">
+                <div class="_ds-link title">Select language</div>
+              </div>
+              <div class="_ds-link action-icon">
+                <i class="bi bi-chevron-down"></i>
+              </div>
+            </button>
+            <ul class="z-index-medium">
+              <li data-value="en">English</li>
+              <li data-value="fr">Français</li>
+            </ul>
             <select name="language" type="select">
-              <option value="">Select language</option>
+              <option value=""></option>
               <option value="en">English</option>
               <option value="fr">Français</option>
             </select>
-            <div class="icons">
-              <i class="bi bi-chevron-down"></i>
-              <i class="bi bi-globe"></i>
-            </div>
           </div>
         </div>
         <div class="col-12">
           <div class="_ds-form select">
             <label for="language">Language</label>
+            <button class="z-index-medium" id="language-2" type="button">
+              <div class="_ds-link caption-icon">
+                <i class="bi bi-globe"></i>
+              </div>
+              <div class="_ds-link body">
+                <div class="_ds-link title">Select language</div>
+              </div>
+              <div class="_ds-link action-icon">
+                <i class="bi bi-chevron-down"></i>
+              </div>
+            </button>
+            <ul class="z-index-medium">
+              <li data-value="en">English</li>
+              <li data-value="fr">Français</li>
+            </ul>
             <select name="language" type="select">
-              <option value="">Select language</option>
+              <option value=""></option>
               <option value="en">English</option>
               <option value="fr">Français</option>
             </select>
-            <div class="icons">
-              <i class="bi bi-chevron-down"></i>
-            </div>
           </div>
         </div>
         <div class="col-12">
@@ -245,6 +289,7 @@
     </div>
     </div>
   </div>
+  <div class="ds-background z-index-low" id="ds-background"></div>
   <script src="index.js"></script>
 </body>
 </html>

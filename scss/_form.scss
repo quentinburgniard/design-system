@@ -19,8 +19,6 @@ form.ds-form {
     label:first-child {
       margin: 0 0 6px 0;
     }
-  
-
   }
 
   .checkbox {
@@ -64,7 +62,7 @@ form.ds-form {
   }
 
   .select, .text {
-    input, select, textarea {
+    button, input, textarea {
       appearance: none;
       background: none;
       border: 0.6px solid #C6C6C6;
@@ -80,9 +78,50 @@ form.ds-form {
   .select {
     position: relative;
 
-    select {
-      cursor: pointer;
+    button {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      text-align: left;
+
+      .body {
+        flex-grow: 2;
+      }
+
+      .caption-icon {
+        margin: 0 8px 0 0;
+      }
+    
+      .action-icon {
+        margin: 0 0 0 8px;
+      }
+    }
+
+    ul {
+      background: #FFFFFF;
+      border: 0.6px solid #C6C6C6;
+      border-radius: 6px;
+      display: none;
+      list-style-type: none;
+      margin: 8px 0 0 0;
+      max-height: 202.5px;
+      overflow: scroll;
+      padding: 0;
       position: absolute;
+      width: 100%;
+
+      li {
+        padding: 11px 15px;
+        border-bottom: 0.6px solid #C6C6C6;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+
+    select {
+      display: none;
     }
 
     .icons {
@@ -92,9 +131,5 @@ form.ds-form {
       justify-content: space-between;
       padding: 11.6px 15.6px;
     }
-  }
-
-  option {
-    padding: 0;
   }
 }

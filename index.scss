@@ -37,6 +37,29 @@ h1, h2, h3, h4, h5, h6 {
   display: block !important;
 }
 
+.z-index-low {
+  z-index: 1;
+}
+
+.z-index-medium {
+  z-index: 2;
+}
+
+.z-index-high {
+  z-index: 3;
+}
+
+.ds-background {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(7.5px);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 a {
   //color: #272727;
 }
@@ -45,6 +68,7 @@ a {
 @import "scss/form";
 @import "scss/full-width-image";
 @import "scss/header";
+@import "scss/image-carousel";
 @import "scss/info";
 @import "scss/link";
 @import "scss/menu";

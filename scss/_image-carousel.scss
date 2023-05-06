@@ -1,0 +1,14 @@
+.ds-image-carousel {
+  background: #E2E2E2;
+  margin: 15px 0 0 0;
+  padding: 30px 0 30px 0;
+
+  .row {
+    flex-wrap: nowrap;
+    overflow: scroll;
+
+    img {
+      width: 100%;
+    }
+  }
+}
