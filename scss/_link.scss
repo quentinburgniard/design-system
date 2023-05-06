@@ -1,0 +1,75 @@
+.ds-link, .ds-link-small {
+  align-items: normal;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 0 0;
+  padding: 15px 12px;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+
+  .body {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: center;
+    
+    .title {
+      font-family: 'Catamaran', sans-serif;
+      font-weight: 600;
+    }
+  
+    .text {
+      color: #444444;
+      font-family: 'Lato', sans-serif;
+    }
+  }
+
+  .caption-icon, .action-icon {
+    align-items: center;
+    display: flex;
+  }
+
+  .caption-icon {
+    margin: 0 8px 0 0;
+  }
+
+  .action-icon {
+    margin: 0 0 0 8px;
+  }
+}
+
+.ds-link {
+  background: #F4F4F6;
+  
+  .title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .action-icon {
+    font-size: 18px;
+  }
+}
+
+.ds-link-small {
+  border: 0.6px solid #C6C6C6;
+
+  .title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .action-icon {
+    color: #A3A3A3;
+    font-size: 13px;
+  }
+}

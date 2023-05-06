@@ -1,0 +1,18 @@
+.ds-menu {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(7.5px);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 72px;
+
+  .ds-link {
+    background: #E1E1E1;
+  }
+
+  .row:first-child > .col > * {
+    margin: 30px 0 0 0;
+  }
+}

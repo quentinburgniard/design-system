@@ -1,0 +1,18 @@
+section.ds-section {
+  background: #FCF8F5;
+  border-radius: 8px;
+  margin: 15px 0 0 0;
+  padding: 30px 12px;
+
+  .title {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .text {
+    color: #444444;
+    line-height: 22px;
+  }
+}

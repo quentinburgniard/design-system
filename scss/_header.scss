@@ -1,0 +1,42 @@
+header.ds-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 30px 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  .logo {
+    img {
+      height: 42px;
+      vertical-align: top;
+      width: 42px;
+    }
+
+    div {
+      display: inline-block;
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 28px;
+      padding: 4px 0 10px 0;
+      text-transform: lowercase;
+    }
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    height: 42px;
+    justify-content: space-between;
+    margin: 0 12px;
+    padding: 18px 0 13px 0;
+    width: 20px;
+
+    div {
+      background: #272727;
+      border-radius: 0.25px;
+      height: 3px;
+    }
+  }
+}
