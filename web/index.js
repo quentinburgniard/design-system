@@ -92,6 +92,9 @@ window.onload = () => {
     row.addEventListener('scroll', () => {
       toggleLeftIcon(icon, row);
     });
+    window.addEventListener('resize', () => {
+      toggleLeftIcon(icon, row);
+    });
   });
 
   document.querySelectorAll('.ds-carousel-icons.icon-action-right').forEach((icon) => {
@@ -103,6 +106,9 @@ window.onload = () => {
 
     toggleRightIcon(icon, row);
     row.addEventListener('scroll', () => {
+      toggleRightIcon(icon, row);
+    });
+    window.addEventListener('resize', () => {
       toggleRightIcon(icon, row);
     });
   });
