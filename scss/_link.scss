@@ -2,6 +2,7 @@
   align-items: normal;
   border: none;
   border-radius: 8px;
+  color: #272727;
   display: flex;
   justify-content: space-between;
   margin: 15px 0 0 0;
@@ -61,6 +62,7 @@
 }
 
 .ds-link-small {
+  background: none;
   border: 0.6px solid #C6C6C6;
 
   .title {
