@@ -1,47 +1,51 @@
 section.ds-carousel-text {
   margin: 15px 0 0 0;
 
-  .row {
-    border-radius: 8px;
-    flex-wrap: nowrap;
-    overflow: scroll;
+  .container {
+    position: relative;
 
-    a {
-      position: relative;
-      text-decoration: none;
+    .row {
+      border-radius: 8px;
+      flex-wrap: nowrap;
+      overflow: scroll;
 
-      article {
-        background: #F4F4F6;
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        height: 140px;
-        justify-content: center;
-        padding: 15px 30px;
+      a {
+        position: relative;
+        text-decoration: none;
 
-        .title {
-          font-family: 'Catamaran', sans-serif;
-          font-size: 20px;
-          font-weight: 600;
+        article {
+          background: #F4F4F6;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          height: 140px;
+          justify-content: center;
+          padding: 15px 30px;
+
+          .title {
+            font-family: 'Catamaran', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+          }
+
+          .text {
+            color: #444444;
+            font-size: 15px;
+            line-height: 22px;
+          }
         }
 
-        .text {
-          color: #444444;
-          font-size: 15px;
-          line-height: 22px;
+        .action-icon {
+          font-size: 18px;
+          position: absolute;
+          right: 15px;
+          top: 15px;
         }
-      }
-
-      .action-icon {
-        font-size: 18px;
-        position: absolute;
-        right: 15px;
-        top: 15px;
       }
     }
-  }
 
-  .row::-webkit-scrollbar {
-    display: none;
+    .row::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
