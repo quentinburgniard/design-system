@@ -52,4 +52,36 @@ window.onload = () => {
   document.querySelectorAll('._ds-form.select li').forEach((node) => {
     node.addEventListener('click', toggleSelect);
   });
+
+  const toggleLeftIcon = (icon, row) => {
+    if (row.scrollLeft > 0) {
+      if (icon.style.display != 'flex') icon.style.display = 'flex';
+    } else {
+      if (icon.style.display != 'none') icon.style.display = 'none';
+    }
+  }
+
+  const toggleRightIcon = (icon, row) => {
+    if (row.scrollLeft + row.offsetWidth >= row.scrollWidth) {
+      if (icon.style.display != 'none') icon.style.display = 'none';
+    } else {
+      if (icon.style.display != 'flex') icon.style.display = 'flex';
+    }
+  }
+
+  document.querySelectorAll('.ds-carousel-icons.icon-action-left').forEach((icon) => {
+    let row = icon.parentNode.querySelector('.row');
+    toggleLeftIcon(icon, row);
+    row.addEventListener('scroll', () => {
+      toggleLeftIcon(icon, row);
+    });
+  });
+
+  document.querySelectorAll('.ds-carousel-icons.icon-action-right').forEach((icon) => {
+    let row = icon.parentNode.querySelector('.row');
+    toggleRightIcon(icon, row);
+    row.addEventListener('scroll', () => {
+      toggleRightIcon(icon, row);
+    });
+  });
 };

@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ds-background {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(7.5px);
   bottom: 0;
   display: none;
@@ -64,14 +64,16 @@ a {
   //color: #272727;
 }
 
+@import "scss/carousel-icons";
+@import "scss/carousel-image";
+@import "scss/carousel-logo";
+@import "scss/carousel-text";
 @import "scss/footer";
 @import "scss/form";
 @import "scss/full-width-image";
 @import "scss/header";
-@import "scss/image-carousel";
 @import "scss/info";
 @import "scss/link";
-@import "scss/logo-carousel";
 @import "scss/menu";
 @import "scss/section";
 @import "scss/text";

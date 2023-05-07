@@ -1,0 +1,16 @@
+.ds-carousel-icons {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+}
+
+.ds-carousel-icons.icon-action-left {
+  left: 20px;
+}
+
+.ds-carousel-icons.icon-action-right {
+  right: 20px;
+}

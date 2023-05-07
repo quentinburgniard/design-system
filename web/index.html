@@ -15,7 +15,7 @@
       <div class="col">
         <!-- Header component -->
         <header class="ds-header">
-          <a class="_ds-header logo" href="/">
+          <a alt="Home page" class="_ds-header logo" href="/">
             <img alt="Icon Digital Léman" src="https://static.digitalleman.com/s/digitalleman-icon-small.png">
             <div>Design System</div>
           </a>
@@ -35,37 +35,71 @@
       </div>
     </div>
   </div>
-  <!-- Logo Carousel component -->
-  <section class="ds-logo-carousel">
+  <!-- Text Carousel component -->
+  <section class="ds-carousel-text">
     <div class="container">
       <div class="row">
-          <article>
-          </article>
-          <article>
-          </article>
-          <article>
-          </article>
-          <article>
-          </article>
+        <div class="col-10 col-xl-5">
+          <a alt="Click & Collect Casa da Sogra" href="/">
+            <article>
+              <div class="_ds-carousel-text title">Click & Collect Casa da Sogra</div>
+              <div class="_ds-carousel-text text">Web application to order dishes</div>
+            </article>
+            <div class="_ds-carousel-text action-icon">
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+          </a>
         </div>
+        <div class="col-10 col-xl-5">
+          <a alt="CV Generator" href="/">
+            <article>
+              <div class="_ds-carousel-text title">CV Generator</div>
+            </article>
+            <div class="_ds-carousel-text action-icon">
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Logo Carousel component -->
+  <section class="ds-carousel-logo">
+    <div class="container">
+      <div class="row">
+        <a alt="Projects with Docker" href="/">
+          <img alt="Docker Logo" src="https://digitalleman.fra1.digitaloceanspaces.com/horizontal_logo_monochromatic_white_ba0dc5c08f.webp">
+          <div class="_ds-carousel-logo action-icon">
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+        </a>
+        <a alt="Projects with Vue.js" href="/">
+          <img alt="Vue.js Logo" src="https://digitalleman.fra1.digitaloceanspaces.com/Logo_Vuejs_867c32a3d3.png">
+          <div class="_ds-carousel-logo action-icon">
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
   <!-- Image Carousel component -->
-  <section class="ds-image-carousel">
+  <section class="ds-carousel-image">
     <div class="container">
       <div class="row">
         <div class="col-10 col-xl-5">
-          <img alt="Profil Quentin Burgniard" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
+          <img alt="Screenshot Casa da Sogra Website" src="https://digitalleman.fra1.digitaloceanspaces.com/casasogra_app_ea3b584d7a.jpg">
         </div>
         <div class="col-10 col-xl-5">
-          <img alt="Profil Quentin Burgniard" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
+          <img alt="Screenshot Casa da Sogra Website" src="https://digitalleman.fra1.digitaloceanspaces.com/casasogra_app_28701d6944.jpg">
         </div>
-        <div class="col-10 col-xl-5">
-          <img alt="Profil Quentin Burgniard" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
-        </div>
-        <div class="col-10 col-xl-5">
-          <img alt="Profil Quentin Burgniard" src="https://static.digitalleman.com/s/quentinburgniard-profil-big.jpg">
-        </div>
+      </div>
+      <div class="ds-carousel-icons icon-action-left">
+        <i class="bi bi-arrow-left-circle-fill"></i>
+        <div></div>
+      </div>
+      <div class="ds-carousel-icons icon-action-right">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+        <div></div>
       </div>
     </div>
   </section>
@@ -73,7 +107,7 @@
     <div class="row">
       <div class="col-12">
         <!-- Link component -->
-        <a class="ds-link" href="/">
+        <a alt="Backend Development" class="ds-link" href="/">
           <div class="_ds-link body">
             <div class="_ds-link title">Backend Development</div>
             <div class="_ds-link text">From PHP to Node.js, I'm building light & modular backend with Docker.</div>
@@ -107,7 +141,7 @@
     <div class="row">
       <div class="col-6 col-xl-4">
         <!-- Small Link component -->
-        <a class="ds-link-small" href="/">
+        <a alt="Backend Development" class="ds-link-small" href="/">
           <div class="_ds-link body">
             <div class="_ds-link-small title">Backend Development</div>
           </div>
@@ -117,7 +151,7 @@
         </a>
       </div>
       <div class="col-6 col-xl-4">
-        <a class="ds-link-small" href="/">
+        <a alt="Frontend Development" class="ds-link-small" href="/">
           <div class="_ds-link body">
             <div class="_ds-link-small title">Frontend Development</div>
           </div>
@@ -127,7 +161,7 @@
         </a>
       </div>
       <div class="col-6 col-xl-4">
-        <a class="ds-link-small" href="/">
+        <a alt="Web Development" class="ds-link-small" href="/">
           <div class="_ds-link body">
             <div class="_ds-link-small title">Web Development</div>
           </div>
@@ -254,7 +288,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <a class="ds-link" href="/">
+          <a alt="Contact Form" class="ds-link" href="/">
             <div class="_ds-link caption-icon">
               <i class="bi bi-envelope"></i>
             </div>
@@ -277,11 +311,11 @@
     </div>
   </footer>
   <!-- Menu component -->
-  <div class="ds-menu" id="ds-menu">
+  <div class="ds-menu z-index-medium" id="ds-menu">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <a class="ds-link" href="/">
+          <a alt="Backend Development" class="ds-link" href="/">
             <div class="_ds-link body">
               <div class="_ds-link title">Backend Development</div>
             </div>
@@ -291,7 +325,7 @@
           </a>
         </div>
         <div class="col-12">
-          <a class="ds-link" href="/">
+          <a alt="Frontend Development" class="ds-link" href="/">
             <div class="_ds-link body">
               <div class="_ds-link title">Frontend Development</div>
             </div>
