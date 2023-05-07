@@ -53,6 +53,18 @@ window.onload = () => {
     node.addEventListener('click', toggleSelect);
   });
 
+  const clickLeftIcon = (row) => {
+    let childrenSize = row.children[0].offsetWidth;
+    row.scrollLeft = childrenSize * Math.floor(row.scrollLeft / (childrenSize + 1));
+  }
+
+  const clickRightIcon = (row) => {
+    let childrenSize = row.children[0].offsetWidth;
+    let maxScroll = row.scrollWidth - row.offsetWidth;
+    let scroll = childrenSize * (Math.floor(row.scrollLeft / childrenSize) + 1);
+    row.scrollLeft = scroll > maxScroll ? maxScroll : scroll;
+  }
+
   const toggleLeftIcon = (icon, row) => {
     if (row.scrollLeft > 0) {
       if (icon.style.display != 'flex') icon.style.display = 'flex';
@@ -71,6 +83,11 @@ window.onload = () => {
 
   document.querySelectorAll('.ds-carousel-icons.icon-action-left').forEach((icon) => {
     let row = icon.parentNode.querySelector('.row');
+
+    icon.addEventListener('click', () => {
+      clickLeftIcon(row);
+    });
+
     toggleLeftIcon(icon, row);
     row.addEventListener('scroll', () => {
       toggleLeftIcon(icon, row);
@@ -79,6 +96,11 @@ window.onload = () => {
 
   document.querySelectorAll('.ds-carousel-icons.icon-action-right').forEach((icon) => {
     let row = icon.parentNode.querySelector('.row');
+
+    icon.addEventListener('click', () => {
+      clickRightIcon(row);
+    });
+
     toggleRightIcon(icon, row);
     row.addEventListener('scroll', () => {
       toggleRightIcon(icon, row);
