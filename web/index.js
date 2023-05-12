@@ -36,21 +36,19 @@ window.onload = () => {
     let value = event.target.getAttribute('data-value');
     
     if (value) {
+      background.classList.toggle('display');
+      ul.classList.toggle('display');
+      buttons.forEach((node) => {
+        if (node.getAttribute('data-name') != button.getAttribute('data-name')) node.classList.toggle('z-index-medium');
+      });
+
       let handled = true;
-
       if (ds.formSelectHandler) handled = await ds.formSelectHandler(event);
-
       if (handled) {
         select.value = value;
         button.querySelector('.title').innerText = event.target.innerText;
       }
     }
-
-    background.classList.toggle('display');
-    ul.classList.toggle('display');
-    buttons.forEach((node) => {
-      if (node.getAttribute('data-name') != button.getAttribute('data-name')) node.classList.toggle('z-index-medium');
-    });
   }
 
   buttons.forEach((node) => {
