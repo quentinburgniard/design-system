@@ -28,7 +28,7 @@ window.onload = () => {
 
   let buttons = document.querySelectorAll('._ds-form.select button');
 
-  const toggleSelect = (event) => {
+  const toggleSelect = async (event) => {
     let parentNode = event.target.closest('.select');
     let button = parentNode.querySelector('button');
     let select = parentNode.querySelector('select');
@@ -38,7 +38,7 @@ window.onload = () => {
     if (value) {
       let handled = true;
 
-      if (ds.formSelectHandler) handled = ds.formSelectHandler(event);
+      if (ds.formSelectHandler) handled = await ds.formSelectHandler(event);
 
       if (handled) {
         select.value = value;
