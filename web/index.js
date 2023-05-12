@@ -34,14 +34,14 @@ window.onload = () => {
     let select = parentNode.querySelector('select');
     let ul = parentNode.querySelector('ul');
     let value = event.target.getAttribute('data-value');
+
+    background.classList.toggle('display');
+    ul.classList.toggle('display');
+    buttons.forEach((node) => {
+      if (node.getAttribute('data-name') != button.getAttribute('data-name')) node.classList.toggle('z-index-medium');
+    });
     
     if (value) {
-      background.classList.toggle('display');
-      ul.classList.toggle('display');
-      buttons.forEach((node) => {
-        if (node.getAttribute('data-name') != button.getAttribute('data-name')) node.classList.toggle('z-index-medium');
-      });
-
       let handled = true;
       if (ds.formSelectHandler) handled = await ds.formSelectHandler(event);
       if (handled) {
