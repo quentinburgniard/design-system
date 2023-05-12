@@ -49,7 +49,7 @@ window.onload = () => {
     background.classList.toggle('display');
     ul.classList.toggle('display');
     buttons.forEach((node) => {
-      if (node.id != button.id) node.classList.toggle('z-index-medium');
+      if (node.getAttribute('data-name') != button.getAttribute('data-name')) node.classList.toggle('z-index-medium');
     });
   }
 
