@@ -1,4 +1,6 @@
 window.onload = () => {
+  window.ds = window.ds || {};
+
   let background = document.getElementById('ds-background');
 
   let hamburger = document.getElementById('ds-hamburger');
@@ -34,8 +36,14 @@ window.onload = () => {
     let value = event.target.getAttribute('data-value');
     
     if (value) {
-      select.value = value;
-      button.querySelector('.title').innerText = event.target.innerText;
+      let handled = true;
+
+      if (ds.formSelectHandler) handled = ds.formSelectHandler(event);
+
+      if (handled) {
+        select.value = value;
+        button.querySelector('.title').innerText = event.target.innerText;
+      }
     }
 
     background.classList.toggle('display');
