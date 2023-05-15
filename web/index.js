@@ -66,7 +66,7 @@ window.onload = () => {
 
   const clickRightIcon = (row) => {
     let childrenSize = row.children[0].offsetWidth;
-    let maxScroll = row.scrollWidth - row.offsetWidth;
+    let maxScroll = row.scrollWidth - row.offsetWidth + 1;
     let scroll = childrenSize * (Math.floor(row.scrollLeft / childrenSize) + 1);
     row.scrollLeft = scroll > maxScroll ? maxScroll : scroll;
   }
