@@ -61,7 +61,7 @@ window.onload = () => {
 
   const clickLeftIcon = (row) => {
     let childrenSize = row.children[0].offsetWidth;
-    row.scrollLeft = childrenSize * Math.floor(row.scrollLeft / (childrenSize + 1));
+    row.scrollLeft = childrenSize * Math.floor(row.scrollLeft / Math.ceil(childrenSize));
   }
 
   const clickRightIcon = (row) => {
