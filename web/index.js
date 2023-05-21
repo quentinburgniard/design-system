@@ -118,4 +118,22 @@ window.onload = () => {
       toggleRightIcon(icon, row);
     });
   });
+
+  ds.newToast = (text, colClasses, icon) => {
+    let row = document.querySelector('.ds-toasts .row');
+    let col = document.createElement('div');
+    col.className = colClasses ? colClasses : 'col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 offset-sm-4 offset-md-6 offset-lg-7 offset-xl-8';
+    col.innerHTML = `<div role="status" class="toast animate__animated animate__fadeInDown">
+      <div class="_ds-toast text">${text}</div>
+      <div class="_ds-toast action-icon">
+        <i class="bi ${icon ? icon : 'bi-x-lg'}"></i>
+      </div>
+    </div>`;
+    row.appendChild(col);
+    setTimeout(() => {
+      col.remove()
+    }, 3000);
+  };
+
+  ds.newToast('Your message has been successfully sent.');
 };

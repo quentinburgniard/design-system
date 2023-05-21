@@ -1,5 +1,6 @@
 $bootstrap-icons-font-dir: "https://ds.digitalleman.com/fonts";
 
+@import "node_modules/animate.css/animate";
 @import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import "node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "node_modules/bootstrap-icons/font/bootstrap-icons.scss";
@@ -65,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   display: none;
   left: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
 }
@@ -88,3 +89,4 @@ a {
 @import "scss/section";
 @import "scss/text";
 @import "scss/title";
+@import "scss/toast";

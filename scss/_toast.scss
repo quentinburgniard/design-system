@@ -1,0 +1,22 @@
+.ds-toasts {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 5px;
+  visibility: hidden;
+
+  .toast {
+    background: #E1E1E1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 0 0;
+    padding: 15px 12px;
+    visibility: visible;
+
+    .action-icon {
+      align-items: center;
+      display: flex;
+    }
+  }
+}
