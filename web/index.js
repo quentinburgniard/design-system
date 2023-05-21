@@ -134,6 +134,4 @@ window.onload = () => {
       col.remove()
     }, 3000);
   };
-
-  ds.newToast('Your message has been successfully sent.');
 };
