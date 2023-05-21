@@ -18,8 +18,16 @@ $bootstrap-icons-font-dir: "https://ds.digitalleman.com/fonts";
   outline: #272727 auto 2px;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Lato', sans-serif;
+  height: 100%;
+  justify-content: space-between;
   position: relative;
 }
 

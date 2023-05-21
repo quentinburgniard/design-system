@@ -4,13 +4,21 @@ section.ds-section {
   margin: 15px 0 0 0;
   padding: 30px 12px;
 
-  .title {
+  > * {
+    padding: 0;
+  }
+
+  > .title {
     font-family: 'Catamaran', sans-serif;
     font-size: 20px;
     font-weight: 600;
   }
 
-  .text {
+  > .text {
     color: #444444;
   }
+}
+
+section.ds-section.grey {
+  background: #F4F4F6;
 }
