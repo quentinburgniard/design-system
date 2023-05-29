@@ -119,19 +119,22 @@ window.onload = () => {
     });
   });
 
-  ds.newToast = (text, colClasses, icon) => {
+  ds.newToast = (text, config = {}) => {
     let row = document.querySelector('.ds-toasts .row');
     let col = document.createElement('div');
-    col.className = colClasses ? colClasses : 'col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 offset-sm-4 offset-md-6 offset-lg-7 offset-xl-8';
+    col.className = config.col ? config.col : 'col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 offset-sm-4 offset-md-6 offset-lg-7 offset-xl-8';
     col.innerHTML = `<div role="status" class="toast animate__animated animate__fadeInDown">
       <div class="_ds-toast text">${text}</div>
       <div class="_ds-toast action-icon">
-        <i class="bi ${icon ? icon : 'bi-x-lg'}"></i>
+        <i class="bi bi-x-lg}"></i>
       </div>
     </div>`;
     row.appendChild(col);
     setTimeout(() => {
-      col.remove()
-    }, 3000);
+      col.remove();
+    }, config.timeout ? config.timeout : 5000);
   };
+
+  ds.ready = true;
+  document.dispatchEvent(new Event('ds.ready'));
 };
