@@ -8,40 +8,6 @@ section.ds-carousel-text {
       border-radius: 8px;
       flex-wrap: nowrap;
       overflow: scroll;
-
-      a {
-        position: relative;
-        text-decoration: none;
-
-        article {
-          background: #F4F4F6;
-          border-radius: 8px;
-          display: flex;
-          flex-direction: column;
-          height: 140px;
-          justify-content: center;
-          padding: 15px 30px;
-
-          .title {
-            font-family: 'Catamaran', sans-serif;
-            font-size: 20px;
-            font-weight: 600;
-          }
-
-          .text {
-            color: #444444;
-            font-size: 12px;
-            line-height: 18px;
-          }
-        }
-
-        .action-icon {
-          font-size: 18px;
-          position: absolute;
-          right: 15px;
-          top: 15px;
-        }
-      }
     }
 
     .row::-webkit-scrollbar {

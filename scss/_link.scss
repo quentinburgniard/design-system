@@ -61,6 +61,37 @@
   }
 }
 
+.ds-link-large {
+  background: #F4F4F6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  position: relative;
+  justify-content: center;
+  padding: 15px 30px;
+  text-decoration: none;
+
+  .title {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .text {
+    color: #444444;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .action-icon {
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
 .ds-link-small {
   background: none;
   border: 0.6px solid #C6C6C6;
@@ -75,3 +106,4 @@
     font-size: 13px;
   }
 }
+
