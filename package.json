@@ -1,13 +1,15 @@
 {
   "name": "design-system",
-  "scripts": {
-    "build": "sass --no-source-map -s compressed index.scss web/index.min.css",
-    "dev": "sass --no-source-map -w index.scss web/index.min.css"
-  },
+  "private": true,
+  "main": "index.js",
   "dependencies": {
     "animate.css": "4.x",
     "bootstrap": "5.x",
     "bootstrap-icons": "1.x",
     "sass": "1.x"
+  },
+  "scripts": {
+    "build": "sass --no-source-map -s compressed index.scss web/index.min.css",
+    "dev": "sass --no-source-map -w index.scss web/index.min.css"
   }
 }
