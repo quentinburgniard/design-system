@@ -3,10 +3,10 @@
   "private": true,
   "main": "index.js",
   "dependencies": {
-    "animate.css": "4.x",
-    "bootstrap": "5.x",
-    "bootstrap-icons": "1.x",
-    "sass": "1.x"
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "sass": "^1.98.0"
   },
   "scripts": {
     "build": "sass --no-source-map -s compressed index.scss web/index.min.css",
