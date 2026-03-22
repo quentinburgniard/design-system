@@ -10,6 +10,6 @@
   },
   "scripts": {
     "build": "sass --no-source-map -s compressed index.scss web/index.min.css",
-    "dev": "sass --no-source-map -w index.scss web/index.min.css"
+    "develop": "sass --no-source-map -w index.scss web/index.min.css"
   }
 }
