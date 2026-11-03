@@ -2,9 +2,16 @@
 .DS_Store
 .git
 .gitignore
+.github
+.agents
+.aws
+.codex
+.env
+.env.*
 Dockerfile
 fonts
 LICENSE
 node_modules
 README.md
 web/fonts
+web/index.min.css
